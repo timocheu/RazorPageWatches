@@ -19,4 +19,9 @@ html {
 
 body {
   margin-bottom: 60px;
+  background-image: url("../assets/pattern-seamless.png");
+}
+
+footer {
+    background-color: white;
 }

@@ -1,0 +1,49 @@
+﻿@page
+@model RazorPageWatches.Pages.Watches.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Watch</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post" class="gap-3 d-flex flex-column">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Watch.Model" class="control-label"></label>
+                <input asp-for="Watch.Model" class="form-control" />
+                <span asp-validation-for="Watch.Model" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Watch.Brand" class="control-label"></label>
+                <input asp-for="Watch.Brand" class="form-control" />
+                <span asp-validation-for="Watch.Brand" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Watch.ReleaseDate" class="control-label"></label>
+                <input asp-for="Watch.ReleaseDate" class="form-control" />
+                <span asp-validation-for="Watch.ReleaseDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Watch.Price" class="control-label"></label>
+                <input asp-for="Watch.Price" class="form-control" />
+                <span asp-validation-for="Watch.Price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

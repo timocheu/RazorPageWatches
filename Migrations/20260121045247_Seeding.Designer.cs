@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using RazorPageWatches.Data;
 
@@ -11,9 +12,11 @@ using RazorPageWatches.Data;
 namespace RazorPageWatches.Migrations
 {
     [DbContext(typeof(RazorPageWatchesContext))]
-    partial class RazorPageWatchesContextModelSnapshot : ModelSnapshot
+    [Migration("20260121045247_Seeding")]
+    partial class Seeding
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -53,7 +56,7 @@ namespace RazorPageWatches.Migrations
                             Brand = "Rolex",
                             Model = "Watchless",
                             Price = 4223m,
-                            ReleaseDate = new DateTime(2026, 1, 21, 12, 53, 23, 716, DateTimeKind.Local).AddTicks(4527)
+                            ReleaseDate = new DateTime(2026, 1, 21, 12, 52, 46, 693, DateTimeKind.Local).AddTicks(493)
                         },
                         new
                         {
@@ -61,7 +64,7 @@ namespace RazorPageWatches.Migrations
                             Brand = "Omega",
                             Model = "Timekeeper",
                             Price = 5599m,
-                            ReleaseDate = new DateTime(2026, 1, 21, 12, 53, 23, 716, DateTimeKind.Local).AddTicks(4537)
+                            ReleaseDate = new DateTime(2026, 1, 21, 12, 52, 46, 693, DateTimeKind.Local).AddTicks(503)
                         },
                         new
                         {
@@ -69,7 +72,7 @@ namespace RazorPageWatches.Migrations
                             Brand = "Tag Heuer",
                             Model = "ChronoMaster",
                             Price = 3150m,
-                            ReleaseDate = new DateTime(2026, 1, 21, 12, 53, 23, 716, DateTimeKind.Local).AddTicks(4538)
+                            ReleaseDate = new DateTime(2026, 1, 21, 12, 52, 46, 693, DateTimeKind.Local).AddTicks(505)
                         },
                         new
                         {
@@ -77,7 +80,7 @@ namespace RazorPageWatches.Migrations
                             Brand = "Omega",
                             Model = "Aqua Terra",
                             Price = 4975m,
-                            ReleaseDate = new DateTime(2026, 1, 21, 12, 53, 23, 716, DateTimeKind.Local).AddTicks(4539)
+                            ReleaseDate = new DateTime(2026, 1, 21, 12, 52, 46, 693, DateTimeKind.Local).AddTicks(506)
                         },
                         new
                         {
@@ -85,7 +88,7 @@ namespace RazorPageWatches.Migrations
                             Brand = "Rolex",
                             Model = "Explorer",
                             Price = 7800m,
-                            ReleaseDate = new DateTime(2026, 1, 21, 12, 53, 23, 716, DateTimeKind.Local).AddTicks(4540)
+                            ReleaseDate = new DateTime(2026, 1, 21, 12, 52, 46, 693, DateTimeKind.Local).AddTicks(507)
                         },
                         new
                         {
@@ -93,7 +96,7 @@ namespace RazorPageWatches.Migrations
                             Brand = "Omega",
                             Model = "Speedmaster",
                             Price = 5500m,
-                            ReleaseDate = new DateTime(2026, 1, 21, 12, 53, 23, 716, DateTimeKind.Local).AddTicks(4542)
+                            ReleaseDate = new DateTime(2026, 1, 21, 12, 52, 46, 693, DateTimeKind.Local).AddTicks(508)
                         },
                         new
                         {
@@ -101,7 +104,7 @@ namespace RazorPageWatches.Migrations
                             Brand = "Rolex",
                             Model = "Submariner",
                             Price = 9400m,
-                            ReleaseDate = new DateTime(2026, 1, 21, 12, 53, 23, 716, DateTimeKind.Local).AddTicks(4543)
+                            ReleaseDate = new DateTime(2026, 1, 21, 12, 52, 46, 693, DateTimeKind.Local).AddTicks(509)
                         },
                         new
                         {
@@ -109,7 +112,7 @@ namespace RazorPageWatches.Migrations
                             Brand = "Tag Heuer",
                             Model = "Carrera",
                             Price = 4200m,
-                            ReleaseDate = new DateTime(2026, 1, 21, 12, 53, 23, 716, DateTimeKind.Local).AddTicks(4544)
+                            ReleaseDate = new DateTime(2026, 1, 21, 12, 52, 46, 693, DateTimeKind.Local).AddTicks(510)
                         },
                         new
                         {
@@ -117,7 +120,7 @@ namespace RazorPageWatches.Migrations
                             Brand = "Omega",
                             Model = "Seamaster",
                             Price = 3800m,
-                            ReleaseDate = new DateTime(2026, 1, 21, 12, 53, 23, 716, DateTimeKind.Local).AddTicks(4545)
+                            ReleaseDate = new DateTime(2026, 1, 21, 12, 52, 46, 693, DateTimeKind.Local).AddTicks(511)
                         },
                         new
                         {
@@ -125,7 +128,7 @@ namespace RazorPageWatches.Migrations
                             Brand = "Rolex",
                             Model = "Daytona",
                             Price = 13500m,
-                            ReleaseDate = new DateTime(2026, 1, 21, 12, 53, 23, 716, DateTimeKind.Local).AddTicks(4545)
+                            ReleaseDate = new DateTime(2026, 1, 21, 12, 52, 46, 693, DateTimeKind.Local).AddTicks(512)
                         });
                 });
 #pragma warning restore 612, 618

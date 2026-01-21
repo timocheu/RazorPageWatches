@@ -1,6 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using RazorPageWatches.Data;
+using RazorPageWatches.Models;
+using System;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.

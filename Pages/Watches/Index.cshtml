@@ -10,6 +10,26 @@
 <p>
     <a asp-page="Create">Create New</a>
 </p>
+
+<form class="flex-row">
+    <label>
+        Brand:
+        <div>
+            <select class="custom-select" asp-for="WatchBrand" asp-items="Model.Brand"
+                    style="padding: 5px; border-radius: 5px">
+                <option value="">All</option>
+            </select>
+        </div>
+    </label>
+    <label>
+        Model:
+        <div class="input-group mb-3">
+            <input type="text" name="SearchModel" class="form-control" asp-for="SearchModel" />
+            <button class="btn btn-outline-primary" type="submit">Search</button>
+        </div>
+    </label>
+</form>
+
 <table class="table">
     <thead>
         <tr>
@@ -29,26 +49,27 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model.Watch) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Model)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Brand)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ReleaseDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Price)
-            </td>
-            <td>
-                <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model.Watch)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Model)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Brand)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ReleaseDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Price)
+                </td>
+                <td>
+                    <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

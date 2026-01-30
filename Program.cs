@@ -3,6 +3,10 @@ using Microsoft.Extensions.DependencyInjection;
 using RazorPageWatches.Data;
 using RazorPageWatches.Models;
 using System;
+using System.Globalization;
+
+// Change culture
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -28,5 +32,7 @@ app.UseRouting();
 app.UseAuthorization();
 
 app.MapRazorPages();
+
+CultureInfo.CurrentCulture = CultureInfo.GetCultureInfo("en-PH");
 
 app.Run();

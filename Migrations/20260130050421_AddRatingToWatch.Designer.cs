@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using RazorPageWatches.Data;
 
@@ -11,9 +12,11 @@ using RazorPageWatches.Data;
 namespace RazorPageWatches.Migrations
 {
     [DbContext(typeof(RazorPageWatchesContext))]
-    partial class RazorPageWatchesContextModelSnapshot : ModelSnapshot
+    [Migration("20260130050421_AddRatingToWatch")]
+    partial class AddRatingToWatch
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

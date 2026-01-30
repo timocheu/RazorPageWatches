@@ -19,9 +19,13 @@ namespace RazorPageWatches.Models
         [DataType(DataType.Date)]
         public DateTime ReleaseDate { get; set; }
 
-        [Range(minimum: 0, maximum: 10e12)]
+        [Range(minimum: 0, maximum: 10e12, ErrorMessage = "It must be a positive value")]
         [DataType(DataType.Currency)]
         [Column(TypeName = "decimal(18, 2)")]
         public decimal Price { get; set; }
+
+        [Range(minimum: 1, maximum: 5)]
+        [Column(TypeName = "decimal(5, 2)")]
+        public decimal Rating { get; set; }
     }
 }

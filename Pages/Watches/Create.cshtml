@@ -34,6 +34,11 @@
                 <span asp-validation-for="Watch.Price" class="text-danger" ></span>
             </div>
             <div class="form-group">
+                <label asp-for="Watch.Rating" class="control-label"></label>
+                <input asp-for="Watch.Rating" class="form-control" />
+                <span asp-validation-for="Watch.Rating" class="text-danger" ></span>
+            </div>
+            <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>
         </form>

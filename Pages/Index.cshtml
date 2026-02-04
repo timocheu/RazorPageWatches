@@ -1,10 +1,118 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Watch Gaze";
+    ViewData["Title"] = "AURIK | Watch Gaze";
 }
 
-<div class="text-center bg-white">
-    <h1 class="display-1">Watch Gaze</h1>
-    <p class="display-5 text-muted">The watch that makes full gaze.</p>
+<style>
+    body {
+        font-family: 'Inter', -apple-system, sans-serif;
+        background-color: #f8f9fa;
+        color: #1a1a1a;
+    }
+
+    /* Minimalist Typography */
+    .hero-title {
+        font-weight: 800;
+        letter-spacing: -2px;
+        text-transform: uppercase;
+        line-height: 1;
+        font-size: clamp(2.5rem, 8vw, 5rem);
+    }
+
+    /* Red Accent Button */
+    .btn-aurik {
+        background-color: #e63946;
+        color: white;
+        border: none;
+        padding: 10px 40px;
+        border-radius: 0;
+        font-size: 0.8rem;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+        .btn-aurik:hover {
+            background-color: #000;
+            color: white;
+        }
+
+    /* Layout Sections */
+    .watch-hero-img {
+        width: 100%;
+        max-width: 900px;
+        margin-top: -50px;
+    }
+
+    .sidebar-text {
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        border-left: 2px solid #e63946;
+        padding-left: 15px;
+    }
+
+    .bg-dark-footer {
+        background-color: #0a0a0a;
+        color: #fff;
+    }
+</style>
+
+<div class="container-fluid bg-white px-4 py-5">
+    <div class="row align-items-center mb-5">
+        <div class="col-lg-8 offset-lg-2 text-center">
+            <h1 class="hero-title mb-4">Meet the UA-01: A New <br> Era in Innovation</h1>
+
+            <div class="d-flex justify-content-center align-items-center gap-3 mb-5">
+                <span class="badge rounded-circle bg-danger p-2" style="width:30px; height:30px">Y</span>
+                <p class="text-muted small mb-0 text-start" style="max-width: 300px;">
+                    Our inspiration flows from the realms of engineering, motorsport, and contemporary design.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-12 text-center">
+            <img src="https://via.placeholder.com/1200x600/eeeeee/999999?text=Hero+Watch+Profile"
+                 alt="UA-01 Watch" class="img-fluid watch-hero-img">
+        </div>
+    </div>
+
+    <div class="row mt-5 pt-5 pb-5">
+        <div class="col-md-4 offset-md-1 d-flex flex-column justify-content-center">
+            <div class="sidebar-text mb-4">
+                <strong>Crafted for everyday explorers.</strong>
+                <p class="text-muted mt-2">Expertly crafted for those who explore the world every day with precision and style in mind.</p>
+            </div>
+            <a href="#" class="btn btn-aurik align-self-start">SEE DETAILS &gt;</a>
+        </div>
+        <div class="col-md-6">
+            <img src="https://via.placeholder.com/600x600/f0f0f0/cccccc?text=Crystal+Detail"
+                 alt="Watch Detail" class="img-fluid">
+        </div>
+    </div>
 </div>
+
+<section class="bg-light py-5 border-top">
+    <div class="container">
+        <h6 class="text-muted mb-5">DEVELOPMENT PROCESS</h6>
+        <div class="row text-start">
+            <div class="col-md-4 mb-4">
+                <img src="https://via.placeholder.com/300x200?text=Sketch" class="img-fluid mb-3">
+                <small class="fw-bold d-block mb-2">MADE FOR EXPLORER</small>
+                <p class="small text-muted">Aurik combines art and engineering, merging aesthetics with functionality.</p>
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="https://via.placeholder.com/300x200?text=Components" class="img-fluid mb-3">
+                <small class="fw-bold d-block mb-2">BUILT FOR EXPLORERS</small>
+                <p class="small text-muted">Creating precise, innovative timepieces that celebrate life's moments.</p>
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="https://via.placeholder.com/300x200?text=Final+Assembly" class="img-fluid mb-3">
+                <small class="fw-bold d-block mb-2">CRAFTED FOR COMFORT</small>
+                <p class="small text-muted">Comfort guides case size, curves, and wrist pressure design.</p>
+            </div>
+        </div>
+    </div>
+</section>

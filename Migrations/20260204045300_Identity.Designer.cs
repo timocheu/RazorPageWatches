@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using RazorPageWatches.Data;
 
@@ -11,9 +12,11 @@ using RazorPageWatches.Data;
 namespace RazorPageWatches.Migrations
 {
     [DbContext(typeof(RazorPageWatchesContext))]
-    partial class RazorPageWatchesContextModelSnapshot : ModelSnapshot
+    [Migration("20260204045300_Identity")]
+    partial class Identity
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -263,7 +266,7 @@ namespace RazorPageWatches.Migrations
                             Model = "Watchless",
                             Price = 4223m,
                             Rating = 0m,
-                            ReleaseDate = new DateTime(2026, 2, 4, 13, 29, 26, 601, DateTimeKind.Local).AddTicks(2021)
+                            ReleaseDate = new DateTime(2026, 2, 4, 12, 52, 59, 609, DateTimeKind.Local).AddTicks(9038)
                         },
                         new
                         {
@@ -272,7 +275,7 @@ namespace RazorPageWatches.Migrations
                             Model = "Timekeeper",
                             Price = 5599m,
                             Rating = 0m,
-                            ReleaseDate = new DateTime(2026, 2, 4, 13, 29, 26, 601, DateTimeKind.Local).AddTicks(2033)
+                            ReleaseDate = new DateTime(2026, 2, 4, 12, 52, 59, 609, DateTimeKind.Local).AddTicks(9052)
                         },
                         new
                         {
@@ -281,7 +284,7 @@ namespace RazorPageWatches.Migrations
                             Model = "ChronoMaster",
                             Price = 3150m,
                             Rating = 0m,
-                            ReleaseDate = new DateTime(2026, 2, 4, 13, 29, 26, 601, DateTimeKind.Local).AddTicks(2034)
+                            ReleaseDate = new DateTime(2026, 2, 4, 12, 52, 59, 609, DateTimeKind.Local).AddTicks(9053)
                         },
                         new
                         {
@@ -290,7 +293,7 @@ namespace RazorPageWatches.Migrations
                             Model = "Aqua Terra",
                             Price = 4975m,
                             Rating = 0m,
-                            ReleaseDate = new DateTime(2026, 2, 4, 13, 29, 26, 601, DateTimeKind.Local).AddTicks(2035)
+                            ReleaseDate = new DateTime(2026, 2, 4, 12, 52, 59, 609, DateTimeKind.Local).AddTicks(9054)
                         },
                         new
                         {
@@ -299,7 +302,7 @@ namespace RazorPageWatches.Migrations
                             Model = "Explorer",
                             Price = 7800m,
                             Rating = 0m,
-                            ReleaseDate = new DateTime(2026, 2, 4, 13, 29, 26, 601, DateTimeKind.Local).AddTicks(2036)
+                            ReleaseDate = new DateTime(2026, 2, 4, 12, 52, 59, 609, DateTimeKind.Local).AddTicks(9055)
                         },
                         new
                         {
@@ -308,7 +311,7 @@ namespace RazorPageWatches.Migrations
                             Model = "Speedmaster",
                             Price = 5500m,
                             Rating = 0m,
-                            ReleaseDate = new DateTime(2026, 2, 4, 13, 29, 26, 601, DateTimeKind.Local).AddTicks(2037)
+                            ReleaseDate = new DateTime(2026, 2, 4, 12, 52, 59, 609, DateTimeKind.Local).AddTicks(9056)
                         },
                         new
                         {
@@ -317,7 +320,7 @@ namespace RazorPageWatches.Migrations
                             Model = "Submariner",
                             Price = 9400m,
                             Rating = 0m,
-                            ReleaseDate = new DateTime(2026, 2, 4, 13, 29, 26, 601, DateTimeKind.Local).AddTicks(2038)
+                            ReleaseDate = new DateTime(2026, 2, 4, 12, 52, 59, 609, DateTimeKind.Local).AddTicks(9057)
                         },
                         new
                         {
@@ -326,7 +329,7 @@ namespace RazorPageWatches.Migrations
                             Model = "Carrera",
                             Price = 4200m,
                             Rating = 0m,
-                            ReleaseDate = new DateTime(2026, 2, 4, 13, 29, 26, 601, DateTimeKind.Local).AddTicks(2039)
+                            ReleaseDate = new DateTime(2026, 2, 4, 12, 52, 59, 609, DateTimeKind.Local).AddTicks(9058)
                         },
                         new
                         {
@@ -335,7 +338,7 @@ namespace RazorPageWatches.Migrations
                             Model = "Seamaster",
                             Price = 3800m,
                             Rating = 0m,
-                            ReleaseDate = new DateTime(2026, 2, 4, 13, 29, 26, 601, DateTimeKind.Local).AddTicks(2043)
+                            ReleaseDate = new DateTime(2026, 2, 4, 12, 52, 59, 609, DateTimeKind.Local).AddTicks(9059)
                         },
                         new
                         {
@@ -344,7 +347,7 @@ namespace RazorPageWatches.Migrations
                             Model = "Daytona",
                             Price = 13500m,
                             Rating = 0m,
-                            ReleaseDate = new DateTime(2026, 2, 4, 13, 29, 26, 601, DateTimeKind.Local).AddTicks(2044)
+                            ReleaseDate = new DateTime(2026, 2, 4, 12, 52, 59, 609, DateTimeKind.Local).AddTicks(9060)
                         });
                 });
 

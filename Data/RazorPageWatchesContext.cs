@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using RazorPageWatches.Models;
 
 namespace RazorPageWatches.Data
 {
-    public class RazorPageWatchesContext : DbContext
+    public class RazorPageWatchesContext : IdentityDbContext
     {
         public RazorPageWatchesContext (DbContextOptions<RazorPageWatchesContext> options)
             : base(options)
@@ -17,6 +19,8 @@ namespace RazorPageWatches.Data
         public DbSet<RazorPageWatches.Models.Watch> Watch { get; set; } = default!;
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
+
             modelBuilder.Entity<Watch>().HasData(
                 new Watch { Id = 1, Model = "Watchless", Brand = "Rolex", Price = 4223M, ReleaseDate = DateTime.Now},
                 new Watch { Id = 2, Model = "Timekeeper", Brand = "Omega", Price = 5599M, ReleaseDate = DateTime.Now },
